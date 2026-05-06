@@ -14,3 +14,4 @@ A Flask-based web application for managing students.
 - SQLite
 - HTML
 - Bootstrap
+
