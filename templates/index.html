@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Student Management System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color:#f5f7fa;
+        }
+
+        .main-container{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .table th{
+            background:#212529;
+            color:white;
+        }
+
+        .btn{
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.03);
+        }
+
+    </style>
+
+</head>
+
+<body class="p-4">
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark bg-dark mb-4">
+
+    <div class="container-fluid">
+
+        <span class="navbar-brand fw-bold">
+            Student Management System
+        </span>
+
+    </div>
+
+</nav>
+
+<div class="container">
+
+<div class="main-container">
+
+    <!-- HEADER -->
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h1 class="fw-bold">
+                Student Management System
+            </h1>
+
+            <h5 class="text-muted">
+                Welcome, {{ user }}
+            </h5>
+
+        </div>
+
+        <div class="d-flex gap-2">
+
+            <a href="/add" class="btn btn-success btn-lg">
+                ➕ Add Student
+            </a>
+
+            <a href="/logout" 
+            class="btn btn-danger btn-lg"
+            onclick="return confirm('Are you sure you want to logout?')">
+                Logout
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FLASH MESSAGES -->
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+
+        {% for category, message in messages %}
+
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+
+        {% endfor %}
+
+    {% endwith %}
+
+    <!-- SEARCH -->
+
+    <form method="GET" class="d-flex gap-2 mb-3">
+
+        <input
+            type="text"
+            name="q"
+            class="form-control"
+            placeholder="Search student"
+            value="{{ query }}"
+        >
+
+        <button type="submit"
+                class="btn btn-primary">
+            Search
+        </button>
+
+        {% if query %}
+
+            <a href="/"
+               class="btn btn-outline-secondary">
+               Clear
+            </a>
+
+        {% endif %}
+
+    </form>
+
+    <!-- SEARCH RESULT -->
+
+    {% if query %}
+
+        {% if students|length > 0 %}
+
+            <h5 class="mb-3">
+                {{ students|length }} result(s) found for
+                "<b>{{ query }}</b>"
+            </h5>
+
+        {% else %}
+
+            <div class="alert alert-warning">
+                No students found for
+                "<b>{{ query }}</b>"
+            </div>
+
+        {% endif %}
+
+    {% endif %}
+
+    <!-- TABLE -->
+
+    <div class="table-responsive">
+
+    <table class="table table-bordered table-hover">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% if students %}
+
+                {% for s in students %}
+
+                <tr>
+
+                    <td>{{ s[0] }}</td>
+                    <td>{{ s[1] }}</td>
+                    <td>{{ s[2] }}</td>
+                    <td>{{ s[3] }}</td>
+
+                    <td>
+
+                        <a href="/edit/{{ s[0] }}"
+                           class="btn btn-primary btn-sm">
+
+                           Edit
+
+                        </a>
+
+                        <a href="/delete/{{ s[0] }}"
+                           class="btn btn-danger btn-sm"
+                           onclick="return confirm('Are you sure?')">
+
+                           Delete
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            {% else %}
+
+                <tr>
+
+                    <td colspan="5"
+                        class="text-center text-muted py-4">
+
+                        No student records available
+
+                    </td>
+
+                </tr>
+
+            {% endif %}
+
+        </tbody>
+
+    </table>
+
+    </div>
+
+</div>
+
+</div>
+
+<footer class="text-center mt-4 text-muted">
+
+    <small>
+        Flask Student Management System
+    </small>
+
+</footer>
+
+</body>
+</html>
