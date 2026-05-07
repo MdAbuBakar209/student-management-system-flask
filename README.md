@@ -76,8 +76,7 @@ A Flask-based web application for managing students.
 ---
 
 ## Edit Student
-
-![Student Updated Successfully](screenshots/student_updated.png)
+![Edit Student](screenshots/student_updated.png)
 ---
 
 ## Confirmation Before Update
