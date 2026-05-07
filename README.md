@@ -87,7 +87,6 @@ A Flask-based web application for managing students.
 
 ## Student Updated Successfully
 ![Student Updated Successfully](screenshots/student_updated.png)
-
 ---
 
 ## Confirmation Before Delete
