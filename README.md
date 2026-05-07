@@ -2,6 +2,16 @@
 
 A Flask-based web application for managing students.
 
+## Tech Stack
+
+- Python
+- Flask
+- SQLite
+- HTML5
+- CSS3
+- Bootstrap
+- Jinja2
+
 ---
 
 ## Features
