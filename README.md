@@ -2,7 +2,8 @@
 
 A Flask-based web application for managing students.
 
-## Features
+---
+
 ## Features
 
 - User Registration
@@ -11,9 +12,18 @@ A Flask-based web application for managing students.
 - Edit Student Details
 - Delete Students
 - Search Students
+- Logout Functionality
 - Flash Messages for Success/Error
 - SQLite Database Integration
 - Responsive UI using Bootstrap
+- Confirmation Alerts for Delete, Update, and Logout
+
+---
+
+## Live Demo
+
+🚀 Live Website:  
+[Student Management System Live Demo](https://student-management-system-flask-lilw.onrender.com)
 
 ---
 
@@ -31,6 +41,18 @@ A Flask-based web application for managing students.
 
 ---
 
+### Registration Successful
+
+![Registration Successful](screenshots/registration_successful.png)
+
+---
+
+### Login Successful
+
+![Login Successful](screenshots/login_successful.png)
+
+---
+
 ### Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
@@ -45,37 +67,61 @@ A Flask-based web application for managing students.
 
 ### Student Added Successfully
 
-![Student Added](screenshots/student_added.png)
+![Student Added](screenshots/student_added_successfully.png)
 
 ---
 
-### Student Already Exists Warning
+### Search Result Found
 
-![Already Exists](screenshots/already_exist_student.png)
+![Search Result](screenshots/result_found.png)
 
 ---
 
-### Search Student
+### No Student Found
 
-![Search Student](screenshots/search.png)
+![No Student Found](screenshots/no_student_found.png)
 
 ---
 
 ### Edit Student
 
-![Edit Student](screenshots/edit_student.png)
+![Edit Student](screenshots/edit.png)
 
 ---
 
 ### Student Updated Successfully
 
-![Updated Student](screenshots/updated_student.png)
+![Student Updated](screenshots/student_updated.png)
 
 ---
 
-### Invalid Login
+### Confirmation Before Update
 
-![Invalid Login](screenshots/login_using_invalid_input.png)
+![Update Confirmation](screenshots/confirmation_before_update.png)
+
+---
+
+### Confirmation Before Delete
+
+![Delete Confirmation](screenshots/confirmation_before_delete.png)
+
+---
+
+### Student Deleted Successfully
+
+![Student Deleted](screenshots/student_deleted_successfully.png)
+
+---
+
+### Confirmation Before Logout
+
+![Logout Confirmation](screenshots/confirmation_before_logout.png)
+
+---
+
+### Logout Successful
+
+![Logout Successful](screenshots/logout_successful.png)
 
 ---
 
