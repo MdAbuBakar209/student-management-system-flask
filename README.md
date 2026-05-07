@@ -30,78 +30,93 @@ A Flask-based web application for managing students.
 ## Project Screenshots
 
 
-## Dashboard
+### Dashboard
+
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-## Register Page
+### Register
+
 ![Register](screenshots/register.png)
 
 ---
 
-## Registration Successful
+### Registration Successful
+
 ![Registration Successful](screenshots/registration_successful.png)
 
 ---
 
-## Login Page
+### Login
+
 ![Login](screenshots/login.png)
 
 ---
 
-## Login Successful
+### Login Successful
+
 ![Login Successful](screenshots/login_successful.png)
 
 ---
 
-## Add Student
+### Add Student
+
 ![Add Student](screenshots/add_student.png)
 
 ---
 
-## Student Added Successfully
+### Student Added Successfully
+
 ![Student Added Successfully](screenshots/student_added_successfully.png)
 
 ---
 
-## Search Result Found
-![Result Found](screenshots/result_found.png)
+### Edit Student
+
+![Edit Student](screenshots/edit.png)
 
 ---
 
-## No Student Found
-![No Student Found](screenshots/no_student_found.png)
+### Confirmation Before Update
 
----
-
-## Edit Student
-![Edit Student](screenshots/student_updated.png)
----
-
-## Confirmation Before Update
 ![Confirmation Before Update](screenshots/confirmation_before_update.png)
 
 ---
 
+### Confirmation Before Delete
 
-## Confirmation Before Delete
 ![Confirmation Before Delete](screenshots/confirmation_before_delete.png)
 
 ---
 
-## Student Deleted Successfully
+### Student Deleted Successfully
+
 ![Student Deleted Successfully](screenshots/student_deleted_successfully.png)
 
 ---
 
-## Confirmation Before Logout
+### Confirmation Before Logout
+
 ![Confirmation Before Logout](screenshots/confirmation_before_logout.png)
 
 ---
 
-## Logout Successful
+### Logout Successful
+
 ![Logout Successful](screenshots/logout_successful.png)
+
+---
+
+### No Student Found
+
+![No Student Found](screenshots/no_student_found.png)
+
+---
+
+### Search Result Found
+
+![Search Result Found](screenshots/result_found.png)
 
 ## Run Locally
 
