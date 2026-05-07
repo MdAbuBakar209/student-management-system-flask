@@ -29,101 +29,84 @@ A Flask-based web application for managing students.
 
 ## Project Screenshots
 
-### Login Page
 
-![Login Page](screenshots/login.png)
-
----
-
-### Registration Page
-
-![Register Page](screenshots/register.png)
-
----
-
-### Registration Successful
-
-![Registration Successful](screenshots/registration_successful.png)
-
----
-
-### Login Successful
-
-![Login Successful](screenshots/login_successful.png)
-
----
-
-### Dashboard
-
+## Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-### Add Student
+## Register Page
+![Register](screenshots/register.png)
 
+---
+
+## Registration Successful
+![Registration Successful](screenshots/registration_successful.png)
+
+---
+
+## Login Page
+![Login](screenshots/login.png)
+
+---
+
+## Login Successful
+![Login Successful](screenshots/login_successful.png)
+
+---
+
+## Add Student
 ![Add Student](screenshots/add_student.png)
 
 ---
 
-### Student Added Successfully
-
-![Student Added](screenshots/student_added_successfully.png)
-
----
-
-### Search Result Found
-
-![Search Result](screenshots/result_found.png)
+## Student Added Successfully
+![Student Added Successfully](screenshots/student_added_successfully.png)
 
 ---
 
-### No Student Found
+## Search Result Found
+![Result Found](screenshots/result_found.png)
 
+---
+
+## No Student Found
 ![No Student Found](screenshots/no_student_found.png)
 
 ---
 
-### Edit Student
-
+## Edit Student
 ![Edit Student](screenshots/edit.png)
 
 ---
 
-### Student Updated Successfully
-
-![Student Updated](screenshots/student_updated.png)
-
----
-
-### Confirmation Before Update
-
-![Update Confirmation](screenshots/confirmation_before_update.png)
+## Confirmation Before Update
+![Confirmation Before Update](screenshots/confirmation_before_update.png)
 
 ---
 
-### Confirmation Before Delete
-
-![Delete Confirmation](screenshots/confirmation_before_delete.png)
-
----
-
-### Student Deleted Successfully
-
-![Student Deleted](screenshots/student_deleted_successfully.png)
+## Student Updated Successfully
+![Student Updated Successfully](screenshots/student_updated.png)
 
 ---
 
-### Confirmation Before Logout
-
-![Logout Confirmation](screenshots/confirmation_before_logout.png)
+## Confirmation Before Delete
+![Confirmation Before Delete](screenshots/confirmation_before_delete.png)
 
 ---
 
-### Logout Successful
+## Student Deleted Successfully
+![Student Deleted Successfully](screenshots/student_deleted_successfully.png)
 
+---
+
+## Confirmation Before Logout
+![Confirmation Before Logout](screenshots/confirmation_before_logout.png)
+
+---
+
+## Logout Successful
 ![Logout Successful](screenshots/logout_successful.png)
-
----
 
 ## Run Locally
 
